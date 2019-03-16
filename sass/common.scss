@@ -1,0 +1,70 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@import "variables";
+@import "components/sidebar";
+@import "components/header";
+@import "components/sliderVideo";
+@import "components/historyBlock";
+@import "components/footer";
+
+@font-face {
+  font-family: 'Raleway-Light';
+  src: url('../fonts/raleway/Raleway-Light.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Raleway-Black';
+  src: url('../fonts/raleway/Raleway-Black.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Raleway-Bold';
+  src: url('../fonts/raleway/Raleway-Bold.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Raleway-ExtraBold';
+  src: url('../fonts/raleway/Raleway-ExtraBold.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Raleway-SemiBold';
+  src: url('../fonts/raleway/Raleway-SemiBold.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Raleway-Regular';
+  src: url('../fonts/raleway/Raleway-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{ margin: 0; padding: 0; box-sizing: border-box; outline: none;}
+
+html, body {
+  position: relative;
+  height: 100%;
+}
+.swiper-container{
+  height: 100vh;
+}
+.swiper-slide{
+  min-height: 100vh;
+}
+.contentContainer{
+  margin: 0 0 0 5.5%;
+  max-width: 1170px;
+}
+.marginLeft{
+  margin: 0 0 0 5.5%;
+}
+@media screen and (max-width: 725px){
+  .marginLeft{
+    margin: 0 0 0 40px;
+  }
+}

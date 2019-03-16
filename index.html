@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Nambawan</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+        <link rel="stylesheet" href="node_modules/swiper/dist/css/swiper.min.css">
+        <link rel="stylesheet" href="css/common.css">
+    </head>
+    <body>
+        <div class="sidebar">
+            <a class="sidebar__link">
+                <div class="sidebar__linkIcon"></div>
+                <div class="sidebar__linkText">Меню</div>
+            </a>
+            <div class="sidebar__socNetworks">
+                <div class="sidebar__socNetwork sidebar__socNetworkInstagram">
+                    <div class="sidebar__socNetworkIcon sidebar__socNetworkInstagramIcon"></div>
+                    <div class="sidebar__socNetworkText sidebar__socNetworkInstagramText">Instagram</div>
+                </div>
+                <div class="sidebar__socNetwork sidebar__socNetworkVk">
+                    <div class="sidebar__socNetworkIcon sidebar__socNetworkVkIcon"></div>
+                    <div class="sidebar__socNetworkText sidebar__socNetworkVkText">Vkontakte</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper marginLeft">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="header swiper-slide" style="background-image: url(img/headerSlideBg.png)">
+                        <div class="header__top">
+                            <div class="header__logo"></div>
+                            <div class="header__contactInfo">
+                                <div class="header__contactInfoNumber">+375 29 987 65 43</div>
+                                <div class="header__contactInfoText">Обратный звонок</div>
+                            </div>
+                        </div>
+                        <div class="header__info">
+                            <div class="header__infoTitle">Мы в Nambawan Trawel</div>
+                            <h3 class="header__infoHeading">
+                                Организуем корпоративное путешествие для Ваших сотрудников и клиентов
+                            </h3>
+                        </div>
+                        <ul class="header__advantagesList">
+                            <li class="header__advantageItem">
+                                <span class="header__advantageItemText">Повышаем лояльность сотрудников;</span>
+                            </li>
+                            <li class="header__advantageItem">
+                                <span class="header__advantageItemText">Увеличиваем мотивацию сотрудников</span>
+                            </li>
+                            <li class="header__advantageItem">
+                                <span class="header__advantageItemText">Улучшаем имидж компании</span>
+                            </li>
+                        </ul>
+                        <a class="header__button" href="#" id="header__nextSlideButton">
+                            <span class="header__buttonIcon"></span>
+                            <span class="header__buttonText">Мы в этом шарим!</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide sliderVideo">
+                        <div class="sliderVideo_videoBlockWrapper" data-toggle="modal" data-target="#modalVideo">
+                            <button class="sliderVideo_videoBlockBtn" id="myBtn"></button>
+                        </div>
+                        <div class="sliderVideo__infoBlock">
+                            <div class="sliderVideo__infoHeading">
+                                Только с нами вы сможете знатно угареть!
+                            </div>
+                            <div class="sliderVideo__infoText">
+                                Гляньте наше чумовое видео, если не верите.
+                                Если хоти и вам такое же по итогу снимем —
+                                будет что вспомнить.
+                            </div>
+                            <div class="sliderVideo__infoAdvantagesWrapper">
+                                <div class="sliderVideo__infoAdvantageBlock">
+                                    <div class="sliderVideo__infoAdvantageIcon"
+                                         style="background-image: url(img/icons/advantageWorld.png);"></div>
+                                    <div class="sliderVideo__infoAdvantageText">
+                                        Работаем в любой <br/>
+                                        точке планеты
+                                    </div>
+                                </div>
+                                <div class="sliderVideo__infoAdvantageBlock">
+                                    <div class="sliderVideo__infoAdvantageIcon"
+                                         style="background-image: url(img/icons/advantageSpace.png);"></div>
+                                    <div class="sliderVideo__infoAdvantageText">
+                                        Но если на Земле <br/>
+                                        все видели, то no problem...
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="sliderVideo__modalWindowWrapper modal fade" id="modalVideo" tabindex="-1" role="dialog"
+             aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="sliderVideo__modalWindow modal-dialog" role="document">
+                <div class="sliderVideo__modalWindowContent modal-content">
+                    <button type="button" class="sliderVideo__modalWindowCloseBtn btn btn-secondary"
+                            data-dismiss="modal"></button>
+                    <div class="sliderVideo__modalWindowVideoWrapper">
+                        <iframe class="sliderVideo__modalWindowVideo" width="1264" height="659"
+                                src="https://www.youtube.com/embed/p_J78O5hHwI" frameborder="0"
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="historyBlock contentContainer paddingLeft paddingRight">
+            <h3 class="historyBlock__heading">
+                Как это было
+            </h3>
+            <div class="historyBlock__sliderWrapper">
+                <div id="historyBlockSlider__climb" class="historyBlock__slider carousel slide" data-ride="carousel"
+                     data-interval="false">
+                    <div class="historyBlockSlider__title">восхождение</div>
+                    <div class="historyBlockSlider__indicators">
+                        <span class="historyBlockSlider__sliderActiveNumber" data-parent="#historyBlockSlider__climb">01</span>
+                        <span class="historyBlockSlider__indicatorsDivider">/</span>
+                        <span class="historyBlockSlider__slidersQuantity">03</span>
+                    </div>
+                    <div class="historyBlock__sliderList carousel-inner">
+                        <div class="historyBlock__sliderItem carousel-item active">
+                            <div class="historyBlock__sliderImage"
+                                 style="background-image: url(img/historySliderClimb_img1.png)"></div>
+                            <div class="historyBlock__sliderItemTitle">
+                                Покорили ледяные вершины <br/>
+                                с командой <span class="historyBlock__infoText_color_brightGreen">HBO</span>
+                            </div>
+                        </div>
+                        <div class="historyBlock__sliderItem carousel-item">
+                            <div class="historyBlock__sliderImage"
+                                 style="background-image: url(img/historySliderClimb_img1.png)"></div>
+                            <div class="historyBlock__sliderItemTitle">
+                                Покорили ледяные вершины <br/>
+                                с командой <span class="historyBlock__infoText_color_brightGreen">HBO</span>
+                            </div>
+                        </div>
+                        <div class="historyBlock__sliderItem carousel-item">
+                            <div class="historyBlock__sliderImage"
+                                 style="background-image: url(img/historySliderClimb_img1.png)"></div>
+                            <div class="historyBlock__sliderItemTitle">
+                                Покорили ледяные вершины <br/>
+                                с командой <span class="historyBlock__infoText_color_brightGreen">HBO</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="historyBlock__sliderArrowsWrapper">
+                        <a class="historyBlock__sliderArrow historyBlock__sliderArrowPrev carousel-control-prev"
+                           href="#historyBlockSlider__climb" role="button" data-slide="prev">
+                        </a>
+                        <a class="historyBlock__sliderArrow historyBlock__sliderArrowNext carousel-control-next"
+                           href="#historyBlockSlider__climb" role="button" data-slide="next">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="historyBlock__infoBlock">
+                <div class="historyBlock__infoText">
+                    Находим <br/>
+                    <span class="historyBlock__infoText_color_brightGreen">сильные стороны</span> <br/>
+                    вашей команды!
+                </div>
+            </div>
+            <div class="historyBlock__infoBlock">
+                <div class="historyBlock__infoText">
+                    Создаем самую<br/>
+                    настощую<br/>
+                    <span class="historyBlock__infoText_color_brightGreen">dream-team!</span>
+                </div>
+            </div>
+            <div class="historyBlock__sliderWrapper">
+                <div id="historyBlockSlider__dipping" class="historyBlock__slider carousel slide" data-ride="carousel"
+                     data-interval="false">
+                    <div class="historyBlockSlider__title">погружение</div>
+                    <div class="historyBlockSlider__indicators">
+                        <span class="historyBlockSlider__sliderActiveNumber">01</span>
+                        <span class="historyBlockSlider__indicatorsDivider">/</span>
+                        <span class="historyBlockSlider__slidersQuantity">03</span>
+                    </div>
+                    <div class="historyBlock__sliderList carousel-inner">
+                        <div class="historyBlock__sliderItem carousel-item active">
+                            <div class="historyBlock__sliderImage"
+                                 style="background-image: url(img/historySliderDipping_img1.png)"></div>
+                            <div class="historyBlock__sliderItemTitle">
+                                Поплавали за рыбками<br/>
+                                с <span class="historyBlock__infoText_color_brightGreen">National Geographic</span>
+                            </div>
+                        </div>
+                        <div class="historyBlock__sliderItem carousel-item">
+                            <div class="historyBlock__sliderImage"
+                                 style="background-image: url(img/historySliderDipping_img1.png)"></div>
+                            <div class="historyBlock__sliderItemTitle">
+                                Поплавали за рыбками<br/>
+                                с <span class="historyBlock__infoText_color_brightGreen">National Geographic</span>
+                            </div>
+                        </div>
+                        <div class="historyBlock__sliderItem carousel-item">
+                            <div class="historyBlock__sliderImage"
+                                 style="background-image: url(img/historySliderDipping_img1.png)"></div>
+                            <div class="historyBlock__sliderItemTitle">
+                                Поплавали за рыбками<br/>
+                                с <span class="historyBlock__infoText_color_brightGreen">National Geographic</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="historyBlock__sliderArrowsWrapper">
+                        <a class="historyBlock__sliderArrow historyBlock__sliderArrowPrev carousel-control-prev"
+                           href="#historyBlockSlider__dipping" role="button" data-slide="prev">
+                        </a>
+                        <a class="historyBlock__sliderArrow historyBlock__sliderArrowNext carousel-control-next"
+                           href="#historyBlockSlider__dipping" role="button" data-slide="next">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer__info contentContainer">
+                <div class="footer__infoContent">
+                    <div class="footer__infoTitle">Тестовое задание сделалa:</div>
+                    <div class="footer__infoText">Балабанская Анна Ивановна</div>
+                </div>
+                <div class="footer__infoContent">
+                    <div class="footer__infoTitle">Затраченное время:</div>
+                    <div class="footer__infoText">~22 ч.</div>
+                </div>
+            </div>
+        </div>
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="node_modules/swiper/dist/js/swiper.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
